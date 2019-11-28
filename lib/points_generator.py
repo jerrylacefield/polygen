@@ -1,4 +1,5 @@
 import random
+import formulas as geom
 
 class Point:
     def __init__(self):
@@ -17,8 +18,6 @@ class Point:
         while dupe:
             if self.p in points:
                 self.p.reset_point(plane)           
-                # self.p[0] = random.randint(plane['x_min'], plane['x_max'])
-                # self.p[1] = random.randint(plane['y_min'], plane['y_max'])
             else:
                 points.append(self.p)
                 dupe = False

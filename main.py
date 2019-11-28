@@ -13,10 +13,10 @@ for i in range(3):
     points_list[i].set_point(plane)
     points_list[i].insert_point(plane, points, points_list[i])
 
-print(points)
-
-# t1 = polygon.Triangle()
-# t1.set_points(points)
-# t1.print_points()
+t1 = polygon.Triangle(points)
+t1.print_points()
+t1.create_edges()
+t1.find_midpoint()
+print(t1.midpoints)
 
 
