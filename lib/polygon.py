@@ -79,31 +79,6 @@ class Point:
             print("New Object Points")
             for p in object_points:
                 print(p.x, p.y)
-            
-            # if test in object_points:
-            #     print("Coorindates already used ... redefining x,y-coordinates")
-            #     self.random_point(plane)
-            # elif i == 2:
-            #     print("testing collinearity")
-            #     m = geom.slope2(object_points[0], object_points[1])
-            #
-            #     if m != "undefined":
-            #         b = geom.y_int2(m , object_points[0])
-            #     else:
-            #         b = "none"
-            #
-            #     if (m == "undefined" and self.x == object_points[0].get_x()) or geom.collinear2(m, b, self.x, self.y):
-            #         print("The new point is collinear")
-            #         print(test, " ---> ", object_points, m, b)
-            #         self.random_point(plane)
-            #     else:
-            #         object_points.append(test)
-            #         collinear = False
-            #         print("New point is noncollinear ... good to go")
-            #         print(m, b)
-            # else:
-            #     object_points.append(test)
-            #     duplicate = False
         
 class Triangle:
     def __init__(self):
