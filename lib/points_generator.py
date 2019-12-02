@@ -19,7 +19,7 @@ class Point:
         
         while dupe and collinear:
             if self.p in object_points:
-                print("Point already inserted ... redefining point")
+                # print("Point already inserted ... redefining point")
                 self.reset_point(plane)
             elif i == 2:
                 # print("testing collinearity")
@@ -31,14 +31,14 @@ class Point:
                     b = "none"
                                 
                 if (m == "undefined" and self.p[0] == object_points[0][0]) or geom.collinear(m, b, self.p):
-                    print("The new point is collinear")
-                    print(self.p, " ---> ", object_points, m, b)
+                    # print("The new point is collinear")
+                    # print(self.p, " ---> ", object_points, m, b)
                     self.reset_point(plane)
                 else:
                     object_points.append(self.p)
                     collinear = False
-                    print("New point is noncollinear ... good to go")
-                    print(m, b)
+                    # print("New point is noncollinear ... good to go")
+                    # print(m, b)
             else:
                 object_points.append(self.p)
                 dupe = False

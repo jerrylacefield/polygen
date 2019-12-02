@@ -18,4 +18,18 @@ def y_int(m, b):
     
 def collinear(m, b, c):
     return c[1] == m * c[0] + b
+    
+    
+# 
+
+def slope2(a, b):
+    if (b.get_x() - a.get_x() == 0):
+        return "undefined"
+    else:
+        return (b.get_y() - a.get_y()) / (b.get_x() - a.get_x())
         
+def y_int2(m, b):
+    return ((-1) * m * b.get_x()) + b.get_y()
+    
+def collinear2(m, b, x, y):
+    return y == m * x + b
